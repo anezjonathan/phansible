@@ -61,9 +61,9 @@ class PhpTest extends \PHPUnit_Framework_TestCase
         $expected = [
             'install' => 1,
             'packages' => [
-                'php5-cli',
-                'php5-intl',
-                'php5-mcrypt',
+                'cli',
+                'intl',
+                'mcrypt',
             ],
             'peclpackages' => []
         ];
@@ -77,7 +77,7 @@ class PhpTest extends \PHPUnit_Framework_TestCase
     public function testShouldNotTransformValues()
     {
         $values = [
-            'packages' => ['php5-cli', 'php5-intl']
+            'packages' => ['cli', 'intl']
         ];
 
         $playbook = $this->getMockBuilder('Phansible\Renderer\PlaybookRenderer')
@@ -102,8 +102,8 @@ class PhpTest extends \PHPUnit_Framework_TestCase
 
         $expected = [
             'packages' => [
-                'php5-cli',
-                'php5-intl'
+                'cli',
+                'intl'
             ]
         ];
 
@@ -117,7 +117,7 @@ class PhpTest extends \PHPUnit_Framework_TestCase
     public function testShouldTransformValues()
     {
         $values = [
-            'packages' => ['php5-cli', 'php5-intl']
+            'packages' => ['cli', 'intl']
         ];
 
         $playbook = $this->getMockBuilder('Phansible\Renderer\PlaybookRenderer')
@@ -142,9 +142,9 @@ class PhpTest extends \PHPUnit_Framework_TestCase
 
         $expected = [
             'packages' => [
-                'php5-cli',
-                'php5-intl',
-                'php5-mysql'
+                'cli',
+                'intl',
+                'mysql'
             ]
         ];
 

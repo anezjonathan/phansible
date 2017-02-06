@@ -59,6 +59,9 @@ class RedisTest extends \PHPUnit_Framework_TestCase
     {
         $expected = [
             'install' => 0,
+            'conf_path' => "/etc/redis",
+            'db_path'   => "/var/lib/redis",
+            'pid_path'  => "/var/run/redis",
             'port'    => 6379,
         ];
 

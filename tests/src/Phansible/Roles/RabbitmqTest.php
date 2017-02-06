@@ -60,6 +60,7 @@ class RabbitmqTest extends \PHPUnit_Framework_TestCase
         $expected = [
             'install'  => 0,
             'plugins'  => [],
+            'hostname' => 'phansible',
             'user'     => 'user',
             'password' => 'password'
         ];
