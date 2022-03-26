@@ -21,7 +21,7 @@
         "knplabs/github-api"  : "~1.2"
     },
     "require-dev": {
-        "phpunit/phpunit": "~3.7",
+        "phpunit/phpunit": "~4.8",
         "lstrojny/phpunit-function-mocker": "dev-master",
         "phpmd/phpmd": "1.4.*",
         "squizlabs/php_codesniffer": "2.*",
